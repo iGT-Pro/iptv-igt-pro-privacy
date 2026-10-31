@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="Open-Source-Hinweise und Android-Medienquellen für IPTV iGT Pro / Open-source notices and Android media sources for IPTV iGT Pro">
+  <title>Open-Source-Hinweise – IPTV iGT Pro</title>
+  <style>
+    :root{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#223047;background:#f5f7fb;line-height:1.65}
+    *{box-sizing:border-box}body{margin:0}a{color:#185abc;text-underline-offset:3px}a:hover{color:#0b3b86}a:focus-visible,button:focus-visible{outline:3px solid #eebc43;outline-offset:3px}
+    header{background:#152641;color:#fff;padding:50px 24px 44px}header .wrap{max-width:840px;margin:auto}.eyebrow{letter-spacing:.12em;text-transform:uppercase;font-weight:700;font-size:.75rem;color:#bfd8ff}h1{font-size:clamp(2rem,5vw,3rem);line-height:1.15;margin:.65rem 0}header p{color:#d7e3f6;max-width:670px;margin:.8rem 0 0}
+    main{max-width:890px;margin:-16px auto 48px;padding:0 20px}.paper{background:#fff;border:1px solid #e1e6ef;border-radius:15px;box-shadow:0 6px 28px #1025400d;padding:clamp(22px,5vw,54px)}h2{font-size:1.23rem;line-height:1.35;margin:1.85rem 0 .65rem;color:#162940}h2:first-of-type{margin-top:0}p,li{font-size:.98rem}ul{padding-left:1.45rem}li{margin:.3rem 0}.meta{font-size:.86rem;color:#59687a;margin-bottom:1.5rem}.source{background:#f1f5fa;border-radius:9px;padding:15px 18px;margin:1rem 0}.download{display:inline-block;background:#176fa2;color:#fff;border-radius:9px;padding:10px 17px;font-weight:700;text-decoration:none}.download:hover{background:#125777;color:#fff}.hash{overflow-wrap:anywhere;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:.84rem}footer{text-align:center;font-size:.85rem;color:#59687a;padding:0 20px 38px}
+    .language-switch{display:flex;gap:9px;margin-top:22px;flex-wrap:wrap}.language-switch button{border:1px solid #c7d7ee;border-radius:9px;background:#273e60;color:#fff;padding:9px 17px;font:inherit;cursor:pointer}.language-switch button[aria-pressed="true"]{background:#fff;color:#162940;font-weight:700}[hidden]{display:none!important}
+    @media print{header{background:#fff;color:#152641;padding:15px 0}header p,.eyebrow{color:#444}main{margin:0;max-width:100%;padding:0}.paper{box-shadow:none;border:0;padding:0}footer{padding:10px}.language-switch{display:none}}
+  </style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="eyebrow">IPTV iGT Pro · Open Source</div>
+  <h1 id="page-title">Open-Source-Hinweise</h1>
+  <p id="page-intro">Verwendete Bibliotheken und Quellcode der Android-Medienkomponenten.</p>
+  <nav class="language-switch" aria-label="Language / Sprache">
+    <button type="button" id="btn-de" aria-pressed="true" onclick="setLanguage('de')">Deutsch</button>
+    <button type="button" id="btn-en" aria-pressed="false" onclick="setLanguage('en')">English</button>
+  </nav>
+</div></header>
+<main>
+<article class="paper" id="notice-de" lang="de">
+  <p>IPTV iGT Pro verwendet unter anderem <a href="https://flutter.dev/">Flutter</a> sowie <a href="https://mpv.io/">mpv</a> und <a href="https://ffmpeg.org/">FFmpeg</a> für die Medienwiedergabe. Die Rechte an diesen Komponenten verbleiben bei ihren jeweiligen Urhebern. Die Lizenz- und Urhebertexte der verwendeten Bibliotheken sind in der App unter <strong>Einstellungen → Open-Source-Lizenzen</strong> abrufbar.</p>
+  <h2>Android-Medienquellen</h2>
+  <p>Die Android-Version verwendet den <a href="https://github.com/media-kit/libmpv-android-video-build/tree/v1.1.7">media-kit-Build v1.1.7 (default)</a> mit mpv-Revision <code>78d43740f52db817d98bcf24fb30a76ab6fa13ff</code> und FFmpeg 6.0. Das folgende Archiv enthält die zu diesem Build vorbereiteten Medienquellen, Patches und Build-Rezepte.</p>
+  <div class="source">
+    <p><a class="download" href="https://github.com/iGT-Pro/iptv-igt-pro-privacy/releases">Release mit Quellenarchiv öffnen</a></p>
+    <p><strong>Datei:</strong> android-media-sources-v1.1.7.zip<br><strong>SHA-256:</strong> <span class="hash">D600967F3DE4B5FB029D4D9F25C53BB0ADB04527B67D589A32E3E6AFDA72F4E2</span></p>
+  </div>
+  <p>Weitere native Komponenten dieses Builds umfassen libass, FreeType, FriBidi, HarfBuzz, Mbed TLS, dav1d und libxml2. Ihre Lizenz- und Urheberhinweise sind ebenfalls in der App enthalten. Das Medienquellenarchiv enthält keinen Quellcode der proprietären App.</p>
+  <h2>Kontakt</h2>
+  <p>Fragen zu den bereitgestellten Quellen: <a href="mailto:gerhard.temper@gmail.com">gerhard.temper@gmail.com</a></p>
+</article>
+<article class="paper" id="notice-en" lang="en" hidden>
+  <p>IPTV iGT Pro uses <a href="https://flutter.dev/">Flutter</a> and the <a href="https://mpv.io/">mpv</a> and <a href="https://ffmpeg.org/">FFmpeg</a> projects for media playback, among other components. Their respective authors retain their rights. License and copyright texts for the libraries used are available in the app under <strong>Settings → Open-source licenses</strong>.</p>
+  <h2>Android media sources</h2>
+  <p>The Android version uses the <a href="https://github.com/media-kit/libmpv-android-video-build/tree/v1.1.7">media-kit v1.1.7 default build</a> with mpv revision <code>78d43740f52db817d98bcf24fb30a76ab6fa13ff</code> and FFmpeg 6.0. The following archive contains the prepared media sources, patches and build recipes for this build.</p>
+  <div class="source">
+    <p><a class="download" href="https://github.com/iGT-Pro/iptv-igt-pro-privacy/releases">Open source archive release</a></p>
+    <p><strong>File:</strong> android-media-sources-v1.1.7.zip<br><strong>SHA-256:</strong> <span class="hash">D600967F3DE4B5FB029D4D9F25C53BB0ADB04527B67D589A32E3E6AFDA72F4E2</span></p>
+  </div>
+  <p>Other native components in this build include libass, FreeType, FriBidi, HarfBuzz, Mbed TLS, dav1d and libxml2. Their license and copyright notices are also included in the app. The media source archive does not contain the proprietary app source code.</p>
+  <h2>Contact</h2>
+  <p>Questions about the provided sources: <a href="mailto:gerhard.temper@gmail.com">gerhard.temper@gmail.com</a></p>
+</article>
+</main>
+<footer>IPTV iGT Pro · <a href="../">Datenschutz / Privacy Policy</a></footer>
+<script>
+(function () {
+  window.setLanguage = function (lang) {
+    if (lang !== 'de' && lang !== 'en') lang = 'en';
+    document.documentElement.lang = lang;
+    document.getElementById('notice-de').hidden = lang !== 'de';
+    document.getElementById('notice-en').hidden = lang !== 'en';
+    document.getElementById('btn-de').setAttribute('aria-pressed', String(lang === 'de'));
+    document.getElementById('btn-en').setAttribute('aria-pressed', String(lang === 'en'));
+    document.getElementById('page-title').textContent = lang === 'de' ? 'Open-Source-Hinweise' : 'Open-source notices';
+    document.getElementById('page-intro').textContent = lang === 'de' ? 'Verwendete Bibliotheken und Quellcode der Android-Medienkomponenten.' : 'Libraries used and source code for Android media components.';
+    document.title = (lang === 'de' ? 'Open-Source-Hinweise' : 'Open-source notices') + ' – IPTV iGT Pro';
+  };
+  var requested = new URLSearchParams(location.search).get('lang');
+  var initial = requested === 'en' || requested === 'de' ? requested : (/^de\b/i.test(navigator.language || '') ? 'de' : 'en');
+  window.setLanguage(initial);
+}());
+</script>
+</body>
+</html>
